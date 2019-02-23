@@ -1,0 +1,10 @@
+{
+	"init":"aaa",
+	"token_size": 2,
+	"halt_symbol": "H",
+	"productions": [
+		{"t":"a", "w":"bc"},
+		{"t":"b", "w":"a"},
+		{"t":"c", "w":"aaH"}
+	]
+}
