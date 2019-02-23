@@ -26,7 +26,6 @@ taken from `./examples/collatz`
 * `init`: initial word (`String`)
 * `token_size`: number of symbols to delete each cycle (`usize`)
 * `halt_symbol`: symbol that will halt execution (`char`)
-  * execution will also halt if there are < `token_size` characters left
 * `productions`: array of production rules
   * `t`: the symbol to recognize (`char`)
   * `w`: word to append when symbol is recognized (`String`)

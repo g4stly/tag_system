@@ -47,7 +47,14 @@ impl System {
     }
 
     fn step(&mut self) -> Option<String> {
-        if self.buffer.chars().count() < self.token_size { return None; }
+        let buffer_len = self.buffer.chars().count();
+        if buffer_len < 1 { return None; }
+        if buffer_len < self.token_size {
+            for _ in 0..(self.token_size - buffer_len) {
+                self.buffer.push('.');
+            }
+        }
+
         let mut tail = self.buffer.split_off(self.token_size);
         match self.buffer.chars().next() {
             Some(c) => {
