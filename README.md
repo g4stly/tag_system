@@ -10,7 +10,7 @@ both of the following are valid:
 - `cargo run ./examples/collatz`
 - `cat ./examples/collatz | cargo run`
 ## input
-taken from `./examples/elementary_arithmetic` which either adds or subtracts two signed 2 bit integers
+taken from `./examples/elementary_arithmetic` which either adds or subtracts two signed 3 bit integers
 ```json
 {
 	"init":"-      3      2      ",
